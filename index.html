@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./w3.css">
+    <title>Love or shit| By: @gean_duv</title>
+    <style>
+        root{
+            --love-color:#ff0000;
+            --shit-color:#a52a2a;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            margin:0;
+        }
+        #love{
+            color: #ff0000e3;
+        }
+        #love:hover{
+            transform: scale(1.1);
+        }
+        #shit{
+            color: #7a5a01e8;
+        }
+        #shit:hover{
+            transform: scale(1.1);
+        }
+
+
+
+
+
+
+            /* seccion del main container */
+            .main{
+                margin: 20px 0;
+                /* border:solid 1px blue; */
+                display: flex;
+                /* justify-content: space-around; */
+                height: 500px;
+            } 
+            #love{
+                background-image:url(./hearts-background.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 50%;
+                /* height: auto; */
+            }
+            #shit{
+                background-image:url(./poop-background.png);
+                width: 50%;
+                /* height: auto; */
+            }
+            .love-btn{
+                background-color:   #7a5a01e8;
+                border-radius: 10px;
+            }
+            .shit-btn{
+                background-color: #ff0000e3;
+                border-radius: 10px;
+            }
+        
+    </style>
+</head>
+<body class="w3-mobile w3-center" style="background-color: #e4dede;">
+    <header class="w3-center" style="margin:0 0 20px 0; background-color: #251b1b; color: white;">
+        <h1>Send <strong id="love-h1" style="color:#ff0000e3;">Love</strong> or <strong id="shit-h1" style="color: #c9660a;">shit</strong></h1>
+        <span>Designed & powered by: <a style="text-decoration: none; color:#4cdef8e3;"href="https://www.instagram.com/gean_duv/" target="_blanck">@gean_duv</a></span>
+    </header>
+
+    <p>Ya que estas por aquí ¿porqué no envias algo de love o prefieres shit?.</p>
+    <div class="main w3-mobile">
+        <section id="shit"  style="display:flex; align-items:center; justify-content: center;">
+            <span class="w3-btn love-btn" style="padding: 10px; color:white;">Enviar mucho amor</span>
+        </section>
+        <section id="love" style="display:flex; align-items:center; justify-content: center;" >
+            <span class="w3-btn shit-btn" style="padding: 10px;  color:white;">Enviar mucha shit</span>
+        </section>
+    </div>
+
+    
+</body>
+</html>
